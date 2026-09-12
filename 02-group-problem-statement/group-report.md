@@ -25,7 +25,7 @@ Hỗ trợ bác sĩ chẩn đoán hình ảnh khoanh vùng bất thường trên
 
 | # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh của nhóm |
 |---|---|---|---|---|---|
-| 1 | Khuê | Viết báo cáo/bài tập bằng tiếng Nhật mất ~2 tiếng thay vì 30 phút | Sinh viên (bản thân) | Vừa nghĩ nội dung vừa dịch thuật ngữ chính xác | Đo được rõ, nhưng khó so sánh Rule/Workflow/Agent vì bản chất chỉ là dịch thuật |
+| 1 | Lâm | Viết báo cáo/bài tập bằng tiếng Nhật mất ~2 tiếng thay vì 30 phút | Sinh viên (bản thân) | Vừa nghĩ nội dung vừa dịch thuật ngữ chính xác | Đo được rõ, nhưng khó so sánh Rule/Workflow/Agent vì bản chất chỉ là dịch thuật |
 | 2 | Khuê | Note đồ án viết tay khi thầy giảng nhanh (4-5 buổi/tuần), ảnh hưởng chất lượng | Sinh viên (bản thân) | Tốc độ ghi tay không theo kịp tốc độ giảng | Pattern trùng với #6 (tóm tắt slide/recording) |
 | 3 | Khuê | Vẽ diagram thủ công không đẹp + viết báo cáo BTL, 12 tiếng/tuần, nhiều lỗi ảnh/câu cú | Sinh viên (bản thân) | Trải dài nhiều bước (vẽ + viết + sửa), không rõ 1 điểm nghẽn | Khó làm nổi trong 1 buổi lab vì cần nhiều thành phần cùng lúc |
 | 4 | Dương | Tổng hợp báo cáo BTL nhóm (11-12 BTL/3-4 tháng, 2-3 BTL song song), 4-15 tiếng/lần | Người tổng hợp trong nhóm | Ghép nối phần của từng người, format không đồng nhất | Cần dữ liệu mẫu thật từ nhiều người mới demo được trong lab |
