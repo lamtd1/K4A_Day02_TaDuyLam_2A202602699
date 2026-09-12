@@ -36,7 +36,6 @@ Hỗ trợ bác sĩ chẩn đoán hình ảnh khoanh vùng bất thường trên
 | 9 | Việt | Bệnh nhân tái khám phải lật lại thông tin cũ, tốn thời gian | Bác sĩ/bệnh nhân (giả định) | Chưa xác định | Cùng cụm domain y tế với #7, #8 — liên quan trực tiếp đến bước 4 trong workflow của #7 |
 | 10 | Phong | Cây trồng ở nhà héo/chết vì không giám sát được khi đi học | Bản thân (chủ nhà trồng cây) | Không phát hiện sớm tình trạng đất/cây | Cần phần cứng sensor + dữ liệu ảnh, khó demo trong 1 buổi lab |
 | 11 | Thịnh | Tổng hợp tin tức từ nhiều kênh để nắm hết trong ngày, 11.5 tiếng/tuần, cần viết báo cáo tóm tắt trích nguồn giống định dạng chung | Bản thân (bản thân) | Đọc trùng lặp nhiều nguồn, không có bản tóm tắt + trích dẫn sẵn | Đo được rõ, dễ demo, nhưng cần nguồn tin ổn định trong lúc lab |
-| 12 | Lâm | *(chưa bổ sung candidate cá nhân — giữ vai trò tổng hợp/facilitator cho bản nộp này)* | | | |
 
 ### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
 
