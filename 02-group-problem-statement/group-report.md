@@ -11,7 +11,7 @@
 | 3   | Lê Nguyễn Thái Dương | 2A202602383 | |
 | 4   | Nguyễn Văn Quốc Việt | 2A202602973 | |
 | 5   | Nguyễn Duy Phong | 2A202602834 | |
-| 6   | Nguyễn Minh Lương | 2A202602618 | |
+| 6   | Nguyễn Phát Thịnh | 2A202602645 | |
 
 **Candidate problem nhóm chọn (1 câu):**
 
@@ -35,7 +35,7 @@ Hỗ trợ bác sĩ chẩn đoán hình ảnh khoanh vùng bất thường trên
 | 8 | Việt | Số hoá bệnh án, tóm tắt, note lại thông tin bệnh nhân | Nhân viên y tế (giả định) | Chưa xác định | Cùng cụm domain y tế với #7, #9 — có thể làm hướng mở rộng sau |
 | 9 | Việt | Bệnh nhân tái khám phải lật lại thông tin cũ, tốn thời gian | Bác sĩ/bệnh nhân (giả định) | Chưa xác định | Cùng cụm domain y tế với #7, #8 — liên quan trực tiếp đến bước 4 trong workflow của #7 |
 | 10 | Phong | Cây trồng ở nhà héo/chết vì không giám sát được khi đi học | Bản thân (chủ nhà trồng cây) | Không phát hiện sớm tình trạng đất/cây | Cần phần cứng sensor + dữ liệu ảnh, khó demo trong 1 buổi lab |
-| 11 | Lương | Tổng hợp tin tức từ nhiều kênh để nắm hết trong ngày, 11.5 tiếng/tuần, cần viết báo cáo tóm tắt trích nguồn giống định dạng chung | Bản thân (bản thân) | Đọc trùng lặp nhiều nguồn, không có bản tóm tắt + trích dẫn sẵn | Đo được rõ, dễ demo, nhưng cần nguồn tin ổn định trong lúc lab |
+| 11 | Thịnh | Tổng hợp tin tức từ nhiều kênh để nắm hết trong ngày, 11.5 tiếng/tuần, cần viết báo cáo tóm tắt trích nguồn giống định dạng chung | Bản thân (bản thân) | Đọc trùng lặp nhiều nguồn, không có bản tóm tắt + trích dẫn sẵn | Đo được rõ, dễ demo, nhưng cần nguồn tin ổn định trong lúc lab |
 | 12 | Lâm | *(chưa bổ sung candidate cá nhân — giữ vai trò tổng hợp/facilitator cho bản nộp này)* | | | |
 
 ### 3.2. Gom trùng / cluster (gom 9-12 ý thành 3-4 cụm)
@@ -44,7 +44,7 @@ Hỗ trợ bác sĩ chẩn đoán hình ảnh khoanh vùng bất thường trên
 |---|---|---|---|
 | A | #2 Note đồ án viết tay (Khuê), #6 Tóm tắt slide/recording (Dương) | Bắt thông tin từ nguồn audio/live rồi tóm tắt lại thành note có cấu trúc | Điểm số cao nhất ở vòng chấm trước (33/35) — vẫn là phương án an toàn nếu cụm D gặp rủi ro |
 | B | #3 Diagram + báo cáo BTL (Khuê), #5 Báo cáo hàng tuần với thầy (Dương) | Soạn thảo tài liệu định kỳ, tốn thời gian trình bày hơn nội dung | Bottleneck trải dài nhiều bước, khó gói gọn trong 1 buổi lab |
-| C | #4 Tổng hợp BTL nhóm (Dương), #11 Tổng hợp tin tức (Lương) | Hợp nhất input rời rạc từ nhiều nguồn/nhiều người thành 1 output thống nhất | #11 khả thi hơn #4 vì không phụ thuộc phải có dữ liệu thật từ người khác nộp đúng hạn |
+| C | #4 Tổng hợp BTL nhóm (Dương), #11 Tổng hợp tin tức (Thịnh) | Hợp nhất input rời rạc từ nhiều nguồn/nhiều người thành 1 output thống nhất | #11 khả thi hơn #4 vì không phụ thuộc phải có dữ liệu thật từ người khác nộp đúng hạn |
 | D | #7 Khoanh vùng MRI, #8 số hoá bệnh án, #9 bệnh nhân tái khám (đều của Việt) | Hỗ trợ quy trình chẩn đoán/hồ sơ y tế bằng AI | **Nhóm chọn #7 làm candidate chính**; #8, #9 giữ làm hướng mở rộng tiềm năng (đặc biệt #9 liên quan trực tiếp đến bước "đối chiếu hồ sơ cũ" trong workflow của #7) |
 | *(đứng riêng)* | #1 Tiếng Nhật (Khuê), #10 Sensor cây trồng (Phong) | — | Tiếng Nhật: ít so sánh được R/W/A. Sensor cây: cần phần cứng, không làm nổi trong lab |
 
@@ -54,7 +54,7 @@ Hỗ trợ bác sĩ chẩn đoán hình ảnh khoanh vùng bất thường trên
 |---|---|---|
 | **#7 (Việt) — Khoanh vùng MRI** | Bài toán có giá trị thực tế cao, actor (bác sĩ chẩn đoán hình ảnh) tồn tại rõ trong thực tế dù nhóm chưa phỏng vấn được; có sẵn dataset công khai (BraTS) và model pretrained (MONAI/nnU-Net) để demo kỹ thuật trong lab mà không cần dữ liệu bệnh viện thật | **Rủi ro lớn nhất của cả nhóm**: chưa có actor thật xác nhận, chưa có số liệu baseline thật (thời gian đọc phim, tần suất bỏ sót) — toàn bộ Problem Statement ở Phase 5 hiện dựa trên tài liệu tham khảo + suy luận, không phải quan sát/phỏng vấn trực tiếp |
 | Cụm A — Ghi chép + tóm tắt bài giảng (Khuê + Dương) | Actor rõ, workflow 4 bước rõ, dễ demo trong lab, điểm số khách quan cao nhất (33/35) | Không phải rủi ro chọn candidate này — đây là phương án dự phòng nếu candidate MRI không validate được |
-| Cụm C (#11, Lương) — Tổng hợp tin tức nhiều kênh | Impact đo được rất rõ (11.5 tiếng/tuần), actor rõ, nhóm hiểu domain | Cần nguồn tin ổn định (API/RSS) để demo trong lab |
+| Cụm C (#11, Thịnh) — Tổng hợp tin tức nhiều kênh | Impact đo được rất rõ (11.5 tiếng/tuần), actor rõ, nhóm hiểu domain | Cần nguồn tin ổn định (API/RSS) để demo trong lab |
 
 ### 3.4. Score để đồng thuận (chấm 1-5, ép nói rõ vì sao cho 5 / cho 3)
 
@@ -83,7 +83,7 @@ Nhóm chọn candidate này dù điểm chấm khách quan thấp hơn 2 candida
 ```text
 Ghi chép + tóm tắt bài giảng (Khuê + Dương, 33 điểm): là candidate điểm cao nhất và an toàn nhất, nhưng nhóm đánh giá quy mô impact nhỏ hơn (chỉ ảnh hưởng việc học của chính nhóm) so với bài toán y tế. Giữ lại làm phương án dự phòng.
 
-Tổng hợp tin tức nhiều kênh (Lương, 31 điểm): impact đo được tốt nhưng phụ thuộc nguồn tin ổn định để demo, và ít mang tính "công nghệ mới" hơn so với bài toán segmentation ảnh y tế mà nhóm muốn thử sức.
+Tổng hợp tin tức nhiều kênh (Thịnh, 31 điểm): impact đo được tốt nhưng phụ thuộc nguồn tin ổn định để demo, và ít mang tính "công nghệ mới" hơn so với bài toán segmentation ảnh y tế mà nhóm muốn thử sức.
 
 Y tế khác (#8 số hoá bệnh án, #9 tái khám) và sensor cây trồng (#10): không đủ điều kiện làm nổi trong 1 buổi lab (thiếu actor thật hoặc thiếu phần cứng) nên bị loại từ vòng shortlist (mục 3.3).
 ```
@@ -91,7 +91,7 @@ Y tế khác (#8 số hoá bệnh án, #9 tái khám) và sensor cây trồng (#
 **Disagreement (nếu có — ai lo gì, chốt ra sao):**
 
 ```text
-Bảng chấm điểm 3.4 tự nó là 1 dạng "disagreement" giữa tiêu chí khách quan và lựa chọn thực tế của nhóm: điểm số nói candidate MRI yếu hơn hẳn 2 candidate kia, nhưng nhóm (theo đề xuất của Việt) vẫn chọn vì impact và hứng thú kỹ thuật. Nhóm thống nhất: chấp nhận rủi ro này có điều kiện — nếu Phase 4 validate không ra được ít nhất 1 nguồn evidence đáng tin (dù là dataset public thay vì phỏng vấn thật), nhóm sẽ quay lại candidate "ghi chép + tóm tắt bài giảng". Các thành viên còn lại (Khuê, Dương, Phong, Lương) cần xác nhận lại đồng thuận này khi họp nhóm thật.
+Bảng chấm điểm 3.4 tự nó là 1 dạng "disagreement" giữa tiêu chí khách quan và lựa chọn thực tế của nhóm: điểm số nói candidate MRI yếu hơn hẳn 2 candidate kia, nhưng nhóm (theo đề xuất của Việt) vẫn chọn vì impact và hứng thú kỹ thuật. Nhóm thống nhất: chấp nhận rủi ro này có điều kiện — nếu Phase 4 validate không ra được ít nhất 1 nguồn evidence đáng tin (dù là dataset public thay vì phỏng vấn thật), nhóm sẽ quay lại candidate "ghi chép + tóm tắt bài giảng". Các thành viên còn lại (Khuê, Dương, Phong, Thịnh) cần xác nhận lại đồng thuận này khi họp nhóm thật.
 ```
 
 ---
@@ -147,9 +147,9 @@ Nên build 1 PoC nhỏ: dùng model pretrained (MONAI/nnU-Net) chạy trên vài
 
 ### 5.1. Current workflow bản nhóm
 
-![Current state workflow — hỗ trợ đọc/khoanh vùng MRI thủ công](images/workflow-current.png)
+![Current state workflow — hỗ trợ đọc/khoanh vùng MRI thủ công](../02-group-problem-statement-workflow-current.png)
 
-Dán workflow hoặc link file: `images/workflow-current.png`
+Dán workflow hoặc link file: `../02-group-problem-statement-workflow-current.png`
 
 ```text
 [1 Chụp MRI → lưu PACS: __' - KTV] → [2 Tải ảnh lên workstation: __' - bác sĩ] → [3 Khoanh vùng nghi ngờ thủ công: __' bottleneck] → [4 Đối chiếu hồ sơ cũ: __'] → [5 Viết báo cáo: __'] → [6 Gửi báo cáo: __']
@@ -172,7 +172,7 @@ Bước 3 (khoanh vùng nghi ngờ thủ công) là bottleneck: thời gian bi�
 
 ### 5.2. Future workflow bản nhóm
 
-![Future state workflow — AI hỗ trợ khoanh vùng, bác sĩ review trước khi chốt](images/workflow-future.png)
+![Future state workflow — AI hỗ trợ khoanh vùng, bác sĩ review trước khi chốt](../02-group-problem-statement-workflow-future.png)
 
 ```text
 [1 Ảnh MRI vào hệ thống: __' - máy/rule] → [2 AI khoanh vùng + confidence score: __' - model] → [3 Bác sĩ review & chỉnh sửa: __' - boundary] → [4 Viết báo cáo, gửi: __']
@@ -330,5 +330,3 @@ Dừng và rollback nếu: (a) sau 1-2 tuần nhóm không tiếp cận được
 - [x] Có workflow trước/sau đủ handoff, bottleneck, boundary, fallback — *thời gian cụ thể từng bước vẫn cần đo thật nội bộ; đã có literature-based estimate làm tham chiếu tạm (3-5 giờ/ca cận trên, giảm 87-100% khi có AI)*
 - [x] Có PS v0 → v1, boundary có làm/không làm — *metric có công thức đo + ngưỡng benchmark kỹ thuật cụ thể (Dice score nnU-Net ~85-89%); baseline "trước" nay có literature-based estimate, chưa phải số đo thật của nhóm*
 - [x] Có so sánh Rule/Workflow/Agent + Decision (Not Yet, có lý do)
-
-> **Ghi chú của Lâm (không phải phần nộp):** Sau khi bổ sung research định lượng (search thật ngày 2026-09-12, 5 nguồn PubMed/PMC/arXiv có link kiểm được), phần research của bản nộp này đã rất vững — đủ để nâng "Baseline + metric đo được chưa?" từ No lên Not Yet. Giới hạn thật sự còn lại duy nhất là Phase 4.1: chưa có quote phỏng vấn từ 1 actor thật. Tôi chủ động KHÔNG bịa quote giả để tick ô này, vì làm vậy sẽ phá vỡ đúng nguyên tắc mà chính bản nộp này đã đặt ra. Quyết định cuối ở Phase 6.3 vẫn là "Not Yet" chứ không phải "Go" — đúng với thực trạng bằng chứng: kỹ thuật đã đủ tự tin (model, benchmark, dataset), nhưng actor thật vẫn chưa xác nhận. Trước khi nộp thật, nhóm nên ưu tiên phỏng vấn 1 người có kiến thức y khoa (kể cả không phải bác sĩ hành nghề) — đây là việc duy nhất còn lại, mọi thứ khác đã có thể coi là xong.
