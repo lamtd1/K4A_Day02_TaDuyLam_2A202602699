@@ -6,12 +6,12 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò trong nhóm (VD: facilitator, workflow, research, writer) |
 |-----|-----------|-------------|---------------------------------------------------------------|
-| 1   | Tạ Duy Lâm | 2A202602699 | |
-| 2   | Nguyễn Xuân Khuê | 2A202602999 | |
-| 3   | Lê Nguyễn Thái Dương | 2A202602383 | |
-| 4   | Nguyễn Văn Quốc Việt | 2A202602973 | |
-| 5   | Nguyễn Duy Phong | 2A202602834 | |
-| 6   | Nguyễn Phát Thịnh | 2A202602645 | |
+| 1   | Tạ Duy Lâm | 2A202602699 |workflow |
+| 2   | Nguyễn Xuân Khuê | 2A202602999 |facilitator |
+| 3   | Lê Nguyễn Thái Dương | 2A202602383 |workflow |
+| 4   | Nguyễn Văn Quốc Việt | 2A202602973 |research |
+| 5   | Nguyễn Duy Phong | 2A202602834 | writer|
+| 6   | Nguyễn Phát Thịnh | 2A202602645 |facilitator |
 
 **Candidate problem nhóm chọn (1 câu):**
 
